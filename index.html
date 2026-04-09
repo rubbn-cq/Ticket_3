@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discount Engine</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Calculadora de Descuento</h1>
+    </header>
+
+    <main>
+        <section>
+            <label for="purchaseAmount">Monto de compra:</label><br>
+            <input type="number" id="purchaseAmount" placeholder="Ej: 120">
+        </section>
+
+        <section>
+            <p>¿Tiene cupón?</p>
+            <label>
+                <input type="checkbox" id="hasCoupon">
+                Sí
+            </label>
+        </section>
+
+        <section>
+            <button id="calculateBtn">Calcular precio final</button>
+        </section>
+
+        <section>
+            <p>Precio final: <span id="finalPrice">0</span></p>
+        </section>
+    </main>
+
+    <script src="js/index.js"></script>
+
+</body>
+</html>
