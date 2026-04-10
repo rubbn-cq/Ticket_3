@@ -1,41 +1,32 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Discount Engine</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Discount Calculator</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <header>
-        <h1>Calculadora de Descuento</h1>
-    </header>
+  <div class="container">
+    <h2>Discount Calculator</h2>
 
-    <main>
-        <section>
-            <label for="purchaseAmount">Monto de compra:</label><br>
-            <input type="number" id="purchaseAmount" placeholder="Ej: 120">
-        </section>
+    <label for="purchaseAmount">Purchase Amount ($)</label>
+    <input type="number" id="purchaseAmount" placeholder="Enter amount">
 
-        <section>
-            <p>¿Tiene cupón?</p>
-            <label>
-                <input type="checkbox" id="hasCoupon">
-                Sí
-            </label>
-        </section>
+    <label class="checkbox">
+      <input type="checkbox" id="hasCoupon">
+      I have a coupon
+    </label>
 
-        <section>
-            <button id="calculateBtn">Calcular precio final</button>
-        </section>
+    <button onclick="calculate()">Calculate</button>
 
-        <section>
-            <p>Precio final: <span id="finalPrice">0</span></p>
-        </section>
-    </main>
+    <div id="resultCard" class="result-card">
+      <p id="finalPrice"></p>
+      <p id="discountInfo"></p>
+    </div>
+  </div>
 
-    <script src="js/index.js"></script>
-
+  <script src="js/index.js"></script>
 </body>
 </html>

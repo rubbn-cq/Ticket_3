@@ -1,64 +1,101 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #e2e8f0;
 }
 
-header {
-    text-align: center;
-    background-color: #333;
-    color: white;
-    padding: 15px 0;
+.container {
+  background: #1e293b;
+  padding: 25px;
+  border-radius: 14px;
+  width: 330px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.05);
 }
 
-main {
-    width: 300px;
-    margin: 40px auto;
-    background-color: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #38bdf8;
 }
 
-section {
-    margin-bottom: 15px;
-}
-
-label, p {
-    font-size: 16px;
-    display: block;
-    margin-bottom: 5px;
+label {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #cbd5f5;
 }
 
 input[type="number"] {
-    width: 100%;
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 14px;
+  width: 100%;
+  padding: 9px;
+  border: 1px solid #334155;
+  border-radius: 8px;
+  outline: none;
+  background: #0f172a;
+  color: #e2e8f0;
+  transition: 0.2s;
+}
+
+input[type="number"]:focus {
+  border-color: #38bdf8;
+  box-shadow: 0 0 5px rgba(56, 189, 248, 0.5);
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  gap: 8px;
+  font-size: 14px;
 }
 
 input[type="checkbox"] {
-    margin-right: 5px;
+  accent-color: #38bdf8;
 }
 
 button {
-    width: 100%;
-    padding: 10px;
-    background-color: #333;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
+  width: 100%;
+  margin-top: 18px;
+  padding: 11px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #38bdf8, #0ea5e9);
+  color: #0f172a;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.25s;
 }
 
 button:hover {
-    background-color: #555;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(56, 189, 248, 0.4);
+}
+
+.result-card {
+  margin-top: 20px;
+  padding: 15px;
+  background: #0f172a;
+  border-radius: 10px;
+  text-align: center;
+  display: none;
+  border: 1px solid #334155;
 }
 
 #finalPrice {
-    font-weight: bold;
-    font-size: 18px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #38bdf8;
+}
+
+#discountInfo {
+  font-size: 14px;
+  color: #cbd5f5;
+  margin-top: 5px;
 }
